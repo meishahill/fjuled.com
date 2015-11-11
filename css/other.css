@@ -1,0 +1,61 @@
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: default;
+}
+
+#header{
+  height:10px;
+}
+
+#text{
+  width:80%;
+  margin: auto;
+  left:0; right:0;
+  top:0; bottom:0;
+}
+
+#footer{
+  height:60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  /*height: 50px;*/
+  background-color: #00a087;
+}
+
+#logo{
+  background-image: url(images/blacklogo.jpg);
+  float:left;
+  background-size: cover;
+  width:120px;
+  height:60px;
+}
+
+ /* font-family: adelle;
+  font-size: 14px;*/
+
+li{
+  font-size: 1.2em;
+  display:inline;
+  padding-right:15px;
+  padding-left: 15px;
+}
+
+#instagram{
+  background-image: url(images/instagram.png);
+  float:right;
+  background-size: cover;
+  width:20px;
+  height:20px;
+}
+
+#blog{
+  background-image: url(images/blog.jpeg);
+  float:right;
+  width:20px;
+  height:20px;
+}

@@ -1,0 +1,138 @@
+
+body {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: lighter;
+   /* font-family: Adelle,/* Georgia, 'Hiragino Sans GB', Arial, STXihei, 'Microsoft YaHei', sans-serif;*/
+  font-size: 14px;
+ /* font-weight: 100;*/
+  line-height: 1.5;
+  cursor: default;
+  background: url(images/Picture.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/*#image{
+  background: url(images/Picture.jpg) center center no-repeat;
+  background-size: cover;
+  width:100%;
+  height:80%;
+  overflow: hidden;
+}*/
+
+/*footer{
+  height:20px;
+}*/
+
+#footer{
+  height:60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  /*height: 50px;*/
+  background-color: white;
+}
+
+a {
+ /* color: #00a087;*/
+/* color:#DEB887;*/
+ color: #D2B48C;
+/* color:#20a59a;*/
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#logo{
+  background-image: url(images/blacklogo.jpg);
+  float:left;
+  background-size: cover;
+  width:120px;
+  height:60px;
+  margin: 0px 10px 0px 10px;
+}
+
+ /* font-family: adelle;
+  font-size: 14px;*/
+
+li{
+  font-size: 1.2em;
+  display:inline;
+/*  text-decoration: none;*/
+  padding-right:15px;
+  padding-left: 15px;
+  float:left;
+}
+
+ li a {
+  text-decoration: none;
+}
+
+.submenu{
+  display:none;
+  font-style: normal;
+  font-size: 20px;
+  float: right;
+}
+
+
+
+#instagram{
+  background-image: url(images/instagram.png);
+  float:right;
+  background-size: cover;
+  width:30px;
+  height:30px;
+  margin:0px 10px 0px 10px;
+}
+
+#blog{
+  background-image: url(images/blog.png);
+  float:right;
+  background-size: cover;
+  width:30px;
+  height:30px;
+  margin:0px 10px 0px 10px;
+}
+
+@media screen and (max-width: 790px){
+
+ /* .submenu:before {
+    content: "≡";
+    display:inline;
+    position: absolute;
+    right: 10px;
+    color: yellow;
+    font-size: 3em;
+    margin: 0px 10px 0px 10px;
+  }*/
+
+  .submenu {
+    display: block;
+  }
+
+  .nav{
+    display:none;
+  }
+
+  #instagram{
+    display:none;
+  }
+
+  #blog{
+    display:none;
+  }
+
+  ul{
+    height:0;
+    transition:height 1s;
+    overflow: hidden;
+  }
+  
+  .slideDown{
+    height:20em;
+  }
+}
