@@ -74,8 +74,10 @@ li{
 .submenu{
   display:none;
   font-style: normal;
-  font-size: 20px;
+  font-size: 40px;
   float: right;
+  margin-right: 10px;
+  color: #D2B48C;
 }
 
 
@@ -96,6 +98,10 @@ li{
   width:30px;
   height:30px;
   margin:0px 10px 0px 10px;
+}
+
+.active{
+  font-weight: bold;
 }
 
 @media screen and (max-width: 790px){
@@ -126,13 +132,17 @@ li{
     display:none;
   }
 
-  ul{
+ ul{
     height:0;
     transition:height 1s;
     overflow: hidden;
   }
   
-  .slideDown{
+/*  .slideUp{
     height:20em;
-  }
+  }*/
+
+  .active{
+    font-weight: bold;
+ }
 }
