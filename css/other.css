@@ -6,24 +6,31 @@ body {
   background-color:#EBDECC;
 }
 
-#header{
+/*#header{
   height:10px;
-}
+}*/
 
 #text{
-  width:70%;
-  margin:10%;
-  left:0; right:0;
-  top:10%; bottom:0;
+  width:60%;
+  margin-left:20%;
+  margin-top: 7%;
+  margin-bottom: 100px;
+/*  left:0; right:0;
+  top:10%; bottom:0;*/
   text-align: center;
+  margin:auto;
 }
 
 #textContact{
   width:60%;
-  margin:15%;
-  left:0; right:0;
-  top:5%; bottom:0;
+  margin:10%;
+/*  left:0; right:0;
+  top:5%; bottom:0;*/
+  margin-left:20%;
+  margin-top: 7%;
   text-align: center;
+  background-color: #D2B48C;
+  border-radius: 6px;
 }
 
 .contact{
@@ -55,24 +62,33 @@ h3{
 
 #container{
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 30px;
   margin-bottom:100px;
+  overflow:auto;
+  margin:auto;
+}
+
+#productcontainer{
+  padding-top: 10px;
+  overflow:auto;
+  margin-bottom:100px;
+ /* margin: auto;*/
 }
 
 /*css for new picture*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+/*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
 figure.snip1212 {
-  font-family: 'Raleway', Arial, sans-serif;
+/*  font-family: 'Raleway', Arial, sans-serif;*/
   color: #fff;
   position: relative;
   float: left;
   overflow: hidden;
-  /*margin: 10px 1%;*/
+  margin: 20px calc((100% - 930px)/6);
   height:180px;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
-  width: 100%;
+ /* min-width: 220px;*/
+/*  max-width: 310px;*/
+  /*max-height: 220px;*/
+/*  width: 100%;*/
   color: #000000;
   /*background-image: -webkit-linear-gradient(top, #ffffff 0%, #000000 70%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #000000 70%);*/
@@ -108,7 +124,8 @@ figure.snip1212 p {
 }
 
 figure.snip1212 h2 {
-  color: #ffffff;
+  color: white;
+  text-shadow:1px 1px 0 #696969;
   position: absolute;
   bottom: 100%;
   display: inline-block;
@@ -148,7 +165,7 @@ figure.snip1212.hover figcaption {
 
 
 #footer{
-  height:70px;
+/*  height:70px;*/
   position: fixed;
   bottom: 0;
   left: 0;
@@ -222,7 +239,7 @@ a:hover{
 }
 .snip1211 a:hover,
 .snip1211 .current a {
-  color: #D2B48C;;
+  color: #D2B48C;
 }
 .snip1211 a:hover:before,
 .snip1211 .current a:before {
@@ -280,6 +297,18 @@ li{
 }
 
 
+@media screen and (max-width: 960px){
+  figure.snip1212 {
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 20px calc((100% - 620px)/4);
+  height:180px;
+  color: #000000;
+  }
+}
+
 
 @media screen and (max-width: 790px){
 
@@ -322,4 +351,13 @@ li{
     border-bottom: 1px solid #F5F5DC;
   }
 
+   figure.snip1212 {
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 20px calc((100% - 310px)/2);
+    height:180px;
+    color: #000000;
+    }
 }
